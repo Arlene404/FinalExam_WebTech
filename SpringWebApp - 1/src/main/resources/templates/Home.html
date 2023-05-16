@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <title>Document</title>
+    <title>Student Registration</title>
 </head>
 
 <body>
@@ -22,8 +22,9 @@
             <ul class="nav-links">
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Sign Up</a></li>
+                <li><a th:href="@{'/admins/login'}" class="login">LogIn</a></li>
+                <li><a role="button" th:href="@{'/admins/SignUp'}"
+                    >SignUp</a</li>
             </ul>
         </nav>
     </header>
@@ -42,15 +43,15 @@
         <div class="service-container">
             <div class="service">
                 <h3>Service 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur velit eu mauris dignissim placerat.</p>
+                <p>Register the student</p>
             </div>
             <div class="service">
                 <h3>Service 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur velit eu mauris dignissim placerat.</p>
+                <p>Connect the student with the school.</p>
             </div>
             <div class="service">
                 <h3>Service 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur velit eu mauris dignissim placerat.</p>
+                <p>Provide information about school.</p>
             </div>
         </div>
     </section>
